@@ -17,11 +17,11 @@
             </div>
         </div>
         <div class="relative w-1/2">
-            <img src="/images/her-image-desktop.png" alt="Hero" class="w-full h-full">
-            <img src="/images/her-image-mobile.png" alt="Hero" class="absolute -bottom-4 left-3 ">
+            <img src="/images/hero-image-desktop.png" alt="Hero" class="w-full h-full">
+            <img src="/images/hero-image-mobile.png" alt="Hero" class="absolute -bottom-4 left-3 ">
         </div>
-        <div class="flex space-x-24">0
-            <img src="/images/apple-tv.png" alt="Apple TV">
+        <div class="flex space-x-24">
+            <img src="/images/apple-tv.svg" alt="Apple TV">
         </div>
     </div>
 </section>
