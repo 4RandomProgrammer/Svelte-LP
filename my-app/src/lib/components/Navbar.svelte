@@ -9,7 +9,7 @@
             </div>
         </div>
         <div class="flex items-center space-x-14">
-            <a href="/">Login</a>
+            <a href="/login">Login</a>
             <button class="primary">Start Free Trial</button>
         </div>
     </div>

@@ -12,15 +12,20 @@
     <slot />
 </div>
 
-<style lang="postcss">
+<style lang="postcss" global>
     :global(button){
         @apply px-6 py-3 font-sans rounded-full outline-none;
     }
     :global(button.primary) {
-        @apply bg-primary;
+        @apply bg-primary text-white;
     }
 
     :global(button.outline) {
         @apply border-white text-white border-[1px];
     }
+
+    button.outline-black{
+        @apply border-black text-black border-[1px];
+    }
+
 </style>
