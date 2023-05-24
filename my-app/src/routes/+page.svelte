@@ -96,7 +96,7 @@
 </section>
 
 <section class="py-20 bg-black text-white">
-    <div class="max-x-screen-xl mx-auto">
+    <div class="flex flex-col space-y-32 max-w-screen-xl mx-auto">
         <div class="flex flex-col justify-center">
             <h2 class="text-4xl font-heading font-bold text-center">We help you grow</h2>
         </div>
@@ -111,7 +111,45 @@
                     <img src="/icons/arrow.svg" alt="Arrow Icon">
                 </div>
             </div>
-            <div class="w-1/2"></div>
+            <div class="relative w-1/2">
+                <img src="/images/monetization.png" alt="Monetize your way" class="w-full h-full">
+                <div class="px-9 py-8 bg-white rounded-3xl absolute -top-4 -left-6 text-black flex flex-col space-y-3">
+                    <div class="flex w-full justify-between py-4 px-3 space-x-16 font-semibold font-heading bg-gray-100 rounded-xl hover:bg-blue-200 hover:text-primary transition duration-300 transform hover:-translate-y-1 hover:translate-x-1 hover:shadow-xl">
+                        <p>Donate</p>
+                        <p>$45</p>
+                    </div>
+                    <div class="flex w-full justify-between py-4 px-3 space-x-16 font-semibold font-heading bg-gray-100 rounded-xl hover:bg-blue-200 hover:text-primary transition duration-300 transform hover:-translate-y-1 hover:translate-x-1 hover:shadow-xl">
+                        <p>Donate</p>
+                        <p>$75</p>
+                    </div>
+                    <div class="flex w-full justify-between py-4 px-3 space-x-16 font-semibold font-heading bg-gray-100 rounded-xl hover:bg-blue-200 hover:text-primary transition duration-300 transform hover:-translate-y-1 hover:translate-x-1 hover:shadow-xl">
+                        <p>Donate</p>
+                        <p>$15</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex space-x-24">
+            <div class="flex w-1/2 relative">
+                <img src="/images/optimized.png" alt="Optimized for Growth" class="w-full h-full">
+                <div class="px-4 py-3 bg-white absolute -top-4 -right-4 rounded-2xl">
+                    <div class="relative">
+                        <img src="/icons/email-black.svg" alt="Email Icon" class="w-8 h-6">
+                        <span class="absolute -top-2 -right-2 bg-primary rounded-full text-xs px-[6px] py-[1px] font-heading font-bold">1</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col justify-center w-1/2 space-y-6">
+                <h5 class="font-semibold text-3xl">Optimized for Growth</h5>
+                <p>
+                    Set up subscriptions, rentals, or one-time buys for access to your VOD and live streams. Create exclusive experiences for your subscribers with coupons and promotions. One predictable fee, transparent pricing, and same-day setup.
+                </p>
+                <div class="flex space-x-3">
+                    <p class="font-heading">Get started</p>
+                    <img src="/icons/arrow.svg" alt="Arrow Icon">
+                </div>
+            </div>
         </div>
     </div>
 </section>
+
