@@ -1,6 +1,6 @@
 <script>
     import { each } from "svelte/internal";
-
+    import Carousel from "../lib/components/carousel.svelte";
     const features = [
         {
             title:'Upload & Organize',
@@ -106,9 +106,9 @@
                 <p>
                     Set up subscriptions, rentals, or one-time buys for access to your VOD and live streams. Create exclusive experiences for your subscribers with coupons and promotions. One predictable fee, transparent pricing, and same-day setup.
                 </p>
-                <div class="flex space-x-3">
-                    <p class="font-heading">Get started</p>
-                    <img src="/icons/arrow.svg" alt="Arrow Icon">
+                <div class="flex space-x-3 group cursor-pointer">
+                    <p class="font-heading group-hover:font-bold">Get started</p>
+                    <img src="/icons/arrow.svg"  class="transition transform group-hover:translate-x-1" alt="Arrow Icon">
                 </div>
             </div>
             <div class="relative w-1/2">
@@ -142,14 +142,42 @@
             <div class="flex flex-col justify-center w-1/2 space-y-6">
                 <h5 class="font-semibold text-3xl">Optimized for Growth</h5>
                 <p>
-                    Set up subscriptions, rentals, or one-time buys for access to your VOD and live streams. Create exclusive experiences for your subscribers with coupons and promotions. One predictable fee, transparent pricing, and same-day setup.
-                </p>
-                <div class="flex space-x-3">
-                    <p class="font-heading">Get started</p>
-                    <img src="/icons/arrow.svg" alt="Arrow Icon">
+                    The Screeno ecosystem is designed to help you generate profit. Set up complete sales and marketing funnels with ease using the Screeno built-in marketing tools and integrations. Generate leads and convert your audience into paying subscribers, at no extra cost.</p>
+                <div class="flex space-x-3 group cursor-pointer">
+                    <p class="font-heading group-hover:font-bold">Get started</p>
+                    <img src="/icons/arrow.svg" class="transition transform group-hover:translate-x-1" alt="Arrow Icon">
                 </div>
             </div>
         </div>
     </div>
 </section>
 
+<section class="py-20 text-white bg-black">
+    <div class="flex flex-col max-w-screen-lg mx-auto">
+        <div class="flex flex-col space-y-3 text-center">
+            <h2 class="text-4xl font-heading font-bold">Start your own business today</h2>
+            <p>Consistent quality and experience across all platforms and devices.</p>
+        </div>
+        <div class="flex justify-center space-x-8 mt-14">    
+            <button class="w-1/5 text-black outline-black bg-white">Get started</button>
+            <button class="w-1/5 outline">Login</button>
+        </div>
+        <div class="relative items-center mt-14">
+            <img src="/images/business-desktop.png" alt="business-desktop" class="w-full h-full">
+            <img src="/images/business-mobile.png" alt="business-mobile" class="absolute -bottom-10 -left-6 ">
+        </div>
+    </div>
+</section>
+
+<section class="py-20">
+    <div class="flex flex-col max-w-screen-lg mx-auto">
+        <div class="flex flex-col space-y-3 text-center">
+            <h2 class="text-4xl font-bold font-heading">Famous live on our platform</h2>
+            <p>At the end of the day have fun with celebrities</p>
+        </div>
+        <div class="flex">
+            <Carousel/>
+        </div>
+    </div>
+    
+</section>
