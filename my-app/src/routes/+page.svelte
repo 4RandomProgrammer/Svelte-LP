@@ -33,6 +33,22 @@
             description:'Get organized on all devices'
         },
     ]
+    
+    
+    const images1 = [
+        {title:'Showcase-1', src:'/images/showcase-1.png'},
+        {title:'Showcase-2', src:'/images/showcase-2.png'},
+        {title:'Showcase-3', src:'/images/showcase-3.png'},
+        {title:'Showcase-4', src:'/images/showcase-4.png'}
+    ]
+
+    const images2 = [
+        {title:'Showcase-5', src:'/images/showcase-5.png'},
+        {title:'Showcase-6', src:'/images/showcase-6.png'},
+        {title:'Showcase-7', src:'/images/showcase-7.png'},
+        {title:'Showcase-8', src:'/images/showcase-8.png'},
+        {title:'Showcase-9', src:'/images/showcase-9.png'}
+    ]
 </script>
 
 <section class="bg-black text-white py-20">
@@ -60,11 +76,11 @@
             </div>
         </div>
         <div class="flex justify-between mt-24 space-x-24">
-            <img src="/images/apple-tv.svg" alt="Apple TV">
-            <img src="/images/android-tv.svg" alt="Apple TV">
-            <img src="/images/apple-watch.svg" alt="Apple TV">
-            <img src="/images/iphone.svg" alt="Apple TV">
-            <img src="/images/android.svg" alt="Apple TV">
+            <img src="/images/apple-tv.svg" class="transform transition duration-300 hover:scale-110 cursor-pointer" alt="Apple TV">
+            <img src="/images/android-tv.svg" class="transform transition duration-300 hover:scale-110 cursor-pointer" alt="Apple TV">
+            <img src="/images/apple-watch.svg" class="transform transition duration-300 hover:scale-110 cursor-pointer" alt="Apple TV">
+            <img src="/images/iphone.svg" class="transform transition duration-300 hover:scale-110 cursor-pointer" alt="Apple TV">
+            <img src="/images/android.svg" class="transform transition duration-300 hover:scale-110 cursor-pointer" alt="Apple TV">
         </div>
     </div>
 </section>
@@ -78,13 +94,13 @@
             </div>
             <div class="flex justify-center space-x-8 mt-4">    
                 <button class="w-1/6 primary">Start Free Trial</button>
-                <button class="w-1/6 outline-black">Login</button>
+                <button class="w-1/6 outline-dark">Login</button>
             </div>
             <div class="grid grid-cols-3 gap-12 mt-20">
                 {#each features as feature}
                     <div class="flex flex-col space-y-3 p-4">
                         <div class="flex space-x-3">
-                            <img src={`/icons/${feature.icon}.svg`} alt="{feature.title}">
+                            <img src={`/icons/${feature.icon}.svg`} class="transform transition duration-300 hover:rotate-12" alt="{feature.title}">
                             <h5 class="font-heading font-bold">{feature.title}</h5>
                         </div>
                         <p> {feature.description}</p>
@@ -159,7 +175,7 @@
             <p>Consistent quality and experience across all platforms and devices.</p>
         </div>
         <div class="flex justify-center space-x-8 mt-14">    
-            <button class="w-1/5 text-black outline-black bg-white">Get started</button>
+            <button class="w-1/5 text-black outline-dark bg-white">Get started</button>
             <button class="w-1/5 outline">Login</button>
         </div>
         <div class="relative items-center mt-14">
@@ -175,9 +191,12 @@
             <h2 class="text-4xl font-bold font-heading">Famous live on our platform</h2>
             <p>At the end of the day have fun with celebrities</p>
         </div>
-        <div class="flex">
-            <Carousel/>
-        </div>
+    </div>
+    <div class="flex flex-col mt-24">
+        <Carousel images={images1}/>
+    </div>
+    <div class="flex flex-col mt-8">
+        <Carousel images={images2} class="bg-black"/>
     </div>
     
 </section>
